@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ARJ & Associates | Income Tax, GST, TDS and Company Compliance</title>
+<meta name="description" content="Income tax returns, GST, TDS, company registration and audit support for individuals and businesses in India.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap">
+<style>
+:root{--bg:#f5f6fb;--surface:#fff;--ink:#141a33;--muted:#515a7a;--brand:#1c2a5e;--brand-ink:#fff;--accent:#f28c38;--line:#d9dcec;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1224;--surface:#151c36;--ink:#e8ebf8;--muted:#a3abc9;--brand:#8fa2ff;--brand-ink:#0b1230;--accent:#ffa05a;--line:#2a3358}}
+:root[data-theme="dark"]{--bg:#0d1224;--surface:#151c36;--ink:#e8ebf8;--muted:#a3abc9;--brand:#8fa2ff;--brand-ink:#0b1230;--accent:#ffa05a;--line:#2a3358}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+.logo{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:1.25rem;text-decoration:none}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--brand);color:var(--brand-ink);padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font:600 1rem "Public Sans",sans-serif}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;padding:64px 0;align-items:center}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:700;max-width:16ch}
+.hero p{color:var(--muted);max-width:52ch;font-size:1.1rem;margin:18px 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.dates{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:8px;padding:22px}
+.dates h2{font-size:1.2rem;margin-bottom:4px}
+.dates small{color:var(--muted)}
+.dates ul{list-style:none;margin:14px 0 0;padding:0}
+.dates li{display:flex;gap:14px;padding:10px 0;border-top:1px solid var(--line)}
+.dates b{min-width:64px;font-family:"Source Serif 4",Georgia,serif;font-size:1.05rem}
+section{padding:56px 0}
+.sec h2{font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:10px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:22px}
+.card h3{font-size:1.2rem;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.band{background:var(--brand);color:var(--brand-ink)}
+.band .lead,.band p{color:inherit;opacity:.9}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;padding:0;list-style:none;margin:0}
+.steps li{counter-increment:s;border-top:3px solid var(--accent);padding-top:12px}
+.steps li::before{content:"Step " counter(s);display:block;font-weight:600;margin-bottom:4px}
+.steps h3{font-size:1.1rem;margin-bottom:4px}
+.quote{font-family:"Source Serif 4",Georgia,serif;font-size:1.1rem}
+.quote footer{border:0;font:400 .9rem "Public Sans",sans-serif;color:var(--muted);margin-top:10px}
+.note{font-size:.85rem;color:var(--muted);margin-top:14px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin:10px 0 0}
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:40px}
+form{display:grid;gap:14px}
+label{display:grid;gap:4px;font-weight:500;font-size:.95rem}
+input,select,textarea{font:inherit;padding:11px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);width:100%}
+#msg{min-height:1.4em;font-weight:500}
+footer.site{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem}
+@media (max-width:760px){.hero,.contact{grid-template-columns:1fr}.hero{padding:40px 0}section{padding:40px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#top">ARJ & Associates</a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="#process">How we work</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<h1>Tax and compliance, filed right and filed on time</h1>
+<p>Income tax, GST, TDS and company compliance for salaried people, professionals and growing businesses. Over 10 years of experience, serving clients across India. One advisor who knows your file and answers your calls.</p>
+<div class="cta"><a class="btn" href="#contact">Book a free 20-minute call</a><a class="btn alt" href="#services">See services</a></div>
+</div>
+<aside class="dates" aria-label="Common due dates">
+<h2>Dates clients ask us about</h2>
+<small>Common deadlines. Check the current notified date for your case.</small>
+<ul>
+<li><b>7th</b><span>TDS deposit for the previous month</span></li>
+<li><b>11th</b><span>GSTR-1 for monthly filers</span></li>
+<li><b>20th</b><span>GSTR-3B for monthly filers</span></li>
+<li><b>31 Jul</b><span>ITR for individuals not needing audit</span></li>
+</ul>
+</aside>
+</div>
+
+<section id="services" class="sec"><div class="wrap">
+<h2>What we handle for you</h2>
+<p class="lead">Fixed, clear scopes so you know what you get before you pay.</p>
+<div class="grid">
+<div class="card"><h3>Income tax returns</h3><p>ITR filing for salary, business, capital gains and foreign income, plus notices and assessments.</p></div>
+<div class="card"><h3>GST</h3><p>Registration, monthly and annual returns, reconciliation and refunds.</p></div>
+<div class="card"><h3>TDS and TCS</h3><p>Deduction advice, challans, quarterly returns and corrections.</p></div>
+<div class="card"><h3>Company and LLP setup</h3><p>Incorporation, PAN, TAN, DSC, annual ROC filings and compliance calendar.</p></div>
+<div class="card"><h3>Audit and accounts</h3><p>Tax audit, bookkeeping and financial statements ready for banks and investors.</p></div>
+<div class="card"><h3>Tax planning</h3><p>Choosing between regimes, structuring investments and planning big transactions ahead of time.</p></div>
+<div class="card"><h3>Reporting and analytics</h3><p>Power BI dashboards, SQL reports and Excel models for your accounts, GST and cash flow.</p></div>
+<div class="card"><h3>SAP FICO support</h3><p>Finance and controlling support, accounting entries, reconciliations and month-end reporting in SAP.</p></div>
+</div></div></section>
+
+<section id="process" class="band"><div class="wrap sec">
+<h2>How we work</h2>
+<p class="lead">No surprises. You always know what we need and when.</p>
+<ol class="steps">
+<li><h3>Talk</h3><p>A free call to understand your situation.</p></li>
+<li><h3>Quote</h3><p>A written fee and list of documents.</p></li>
+<li><h3>Do</h3><p>We prepare, you review, we file.</p></li>
+<li><h3>Follow up</h3><p>Acknowledgements, notices and reminders handled.</p></li>
+</ol></div></section>
+
+<section id="about" class="sec"><div class="wrap">
+<h2>About the firm</h2>
+<p class="lead">ARJ &amp; Associates has over 10 years of experience in taxation, accounting and compliance, serving individuals and businesses across India. We also bring data and finance-systems skills in Power BI, SQL, Excel and SAP FICO, so your numbers are filed correctly and easy to understand.</p>
+<div class="grid">
+<div class="card"><p class="quote">“They found a deduction we had missed for two years and fixed it in one filing.”</p><footer>Sample testimonial, replace with a real client</footer></div>
+<div class="card"><p class="quote">“Our GST reconciliation used to take a week. Now it’s done before the 15th.”</p><footer>Sample testimonial, replace with a real client</footer></div>
+</div></div></section>
+
+<section id="faq" class="sec"><div class="wrap">
+<h2>Common questions</h2>
+<p class="lead">Short answers. Your own case may differ.</p>
+<details><summary>Which documents do I need for ITR filing?</summary><p>Usually PAN, Aadhaar, Form 16 or income proofs, Form 26AS and AIS, bank statements and investment proofs. We send you a checklist after the first call.</p></details>
+<details><summary>I received an income tax notice. What now?</summary><p>Don’t ignore it, and note the response date. Send us a copy and we’ll tell you what it means and how to reply.</p></details>
+<details><summary>Do you work with clients in other cities?</summary><p>Yes. We serve clients all over India. Most work happens online through calls and secure document sharing.</p></details>
+<details><summary>How are fees decided?</summary><p>By scope and complexity, quoted in writing before we start.</p></details>
+</div></section>
+
+<section id="contact" class="sec"><div class="wrap contact">
+<div>
+<h2>Talk to us</h2>
+<p class="lead">Tell us what you need and we’ll reply within one working day.</p>
+<p><strong>Phone:</strong> <a href="tel:+919421626696">+91 94216 26696</a><br><strong>Email:</strong> <a href="mailto:arjassociates2015@gmail.com">arjassociates2015@gmail.com</a><br><strong>Service area:</strong> Clients across India</p>
+<p class="note">Please don’t send PAN, Aadhaar or other sensitive documents through this form.</p>
+</div>
+<form id="f" novalidate>
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Phone or email<input name="contact" required></label>
+<label>I need help with<select name="topic"><option>Income tax return</option><option>GST</option><option>TDS</option><option>Company or LLP setup</option><option>Audit and accounts</option><option>Something else</option></select></label>
+<label>Message<textarea name="message" rows="4"></textarea></label>
+<button class="btn" type="submit">Send enquiry</button>
+<div id="msg" role="status"></div>
+</form>
+</div></section>
+</main>
+
+<footer class="site"><div class="wrap">© ARJ & Associates. This site gives general information, not advice for your specific case.</div></footer>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+  e.preventDefault();
+  var d=new FormData(e.target),m=document.getElementById('msg');
+  if(!d.get('name').trim()||!d.get('contact').trim()){m.textContent='Enter your name and a phone number or email so we can reply.';return;}
+  var body='Name: '+d.get('name')+'\nContact: '+d.get('contact')+'\nTopic: '+d.get('topic')+'\n\n'+d.get('message');
+  window.location.href='mailto:arjassociates2015@gmail.com?subject='+encodeURIComponent('Enquiry: '+d.get('topic'))+'&body='+encodeURIComponent(body);
+  m.textContent='Your email app should open with the enquiry ready to send.';
+});
+</script>
+</body>
+</html>
